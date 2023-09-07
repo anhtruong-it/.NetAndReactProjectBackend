@@ -5,9 +5,7 @@ using ReStore.Entities;
 
 namespace ReStore.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ProductsController : ControllerBase
+    public class ProductsController : BaseApiController
     {
         private readonly StoreContext context;
 
