@@ -10,7 +10,8 @@ namespace ReStore.Data
 
         }
 
-        public DbSet<Product> Products { get; set; } // create table products
+        public DbSet<Product> Products { get; set; } // create table Products
+        public DbSet<Basket> Baskets { get; set; } // create table Baskets
 
     }
 }
