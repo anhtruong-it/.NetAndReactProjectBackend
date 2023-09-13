@@ -11,8 +11,8 @@ using ReStore.Data;
 namespace ReStore.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20230913142048_EmptyMigration")]
-    partial class EmptyMigration
+    [Migration("20230913150953_BasketEntityAdded")]
+    partial class BasketEntityAdded
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -63,7 +63,7 @@ namespace ReStore.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("BasketItems");
+                    b.ToTable("BasketItem");
                 });
 
             modelBuilder.Entity("ReStore.Entities.Product", b =>

@@ -2,7 +2,6 @@
 
 namespace ReStore.Entities
 {
-    [Table("BasketItems")]
     public class BasketItem
     {
         public int Id { get; set; } 
